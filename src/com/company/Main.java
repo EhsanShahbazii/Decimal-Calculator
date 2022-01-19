@@ -2,6 +2,10 @@ package com.company;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.datatransfer.Clipboard;
+import java.awt.datatransfer.StringSelection;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 
 public class Main {
@@ -47,6 +51,23 @@ public class Main {
         menuItem5.setMnemonic(KeyEvent.VK_F);
         menu1.add(menuItem5);
 
+        menuItem1.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                StringSelection stringSelection = new StringSelection(jTextArea.getText());
+                Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
+                clipboard.setContents(stringSelection, null);
+                JOptionPane.showMessageDialog(null, "The result was copied.", "Decimal calculator", JOptionPane.INFORMATION_MESSAGE);
+            }
+        });
+
+        menuItem5.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                System.exit(-1);
+            }
+        });
+
         JMenu menu2 = new JMenu("About us");
         menu2.setMnemonic(KeyEvent.VK_F);
         menu2.getAccessibleContext().setAccessibleDescription("Dealing with Files");
@@ -71,7 +92,7 @@ public class Main {
         menuItem6.setMnemonic(KeyEvent.VK_F);
         menu3.add(menuItem6);
 
-        
+
     }
 
     public static void main(String[] args) {
