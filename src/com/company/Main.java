@@ -2,6 +2,7 @@ package com.company;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.KeyEvent;
 
 public class Main {
 
@@ -31,6 +32,19 @@ public class Main {
 
         JMenuBar menuBar = new JMenuBar();
         menuBar.setBackground(new Color(255, 255, 255));
+
+        //Build the File Menu.
+        JMenu menu1 = new JMenu("File");
+        menu1.setMnemonic(KeyEvent.VK_F);
+        menu1.getAccessibleContext().setAccessibleDescription("Dealing with Files");
+
+        JMenu menu2 = new JMenu("About us");
+        menu2.setMnemonic(KeyEvent.VK_F);
+        menu2.getAccessibleContext().setAccessibleDescription("Dealing with Files");
+
+        JMenu menu3 = new JMenu("App version");
+        menu3.setMnemonic(KeyEvent.VK_F);
+        menu3.getAccessibleContext().setAccessibleDescription("Dealing with Files");
     }
 
     public static void main(String[] args) {
