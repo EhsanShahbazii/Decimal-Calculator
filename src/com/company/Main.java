@@ -344,6 +344,16 @@ public class Main {
         jPanel.add(button8);
         jPanel.add(button9);
         jPanel.add(button10);
+        jPanel.add(button11);
+        jPanel.add(button12);
+        jPanel.add(button13);
+        jPanel.add(button14);
+        jPanel.add(button15);
+        jPanel.add(button16);
+        jPanel.add(button17);
+        jPanel.add(button18);
+        jPanel.add(button19);
+        jPanel.add(button20);
 
     }
 
