@@ -38,6 +38,15 @@ public class Main {
         menu1.setMnemonic(KeyEvent.VK_F);
         menu1.getAccessibleContext().setAccessibleDescription("Dealing with Files");
 
+        // create menu item and add it to the menu
+        JMenuItem menuItem1 = new JMenuItem("Copy Result");
+        menuItem1.setMnemonic(KeyEvent.VK_F);
+        menu1.add(menuItem1);
+
+        JMenuItem menuItem5 = new JMenuItem("Quit");
+        menuItem5.setMnemonic(KeyEvent.VK_F);
+        menu1.add(menuItem5);
+
         JMenu menu2 = new JMenu("About us");
         menu2.setMnemonic(KeyEvent.VK_F);
         menu2.getAccessibleContext().setAccessibleDescription("Dealing with Files");
