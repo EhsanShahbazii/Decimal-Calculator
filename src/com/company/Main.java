@@ -1,6 +1,7 @@
 package com.company;
 
 import javax.swing.*;
+import java.awt.*;
 
 public class Main {
 
@@ -12,6 +13,10 @@ public class Main {
 
         jFrame.setTitle("Decimal Calculator");
         jFrame.setResizable(false);
+
+//        ImageIcon img = new ImageIcon("D:\\calculator plus\\src\\com\\company\\calculator_icon.png");
+        jFrame.setIconImage(Toolkit.getDefaultToolkit().getImage(Main.class.getResource("calculator_icon.png")));
+//        jFrame.setIconImage(img.getImage());
     }
 
     public static void main(String[] args) {
