@@ -62,10 +62,16 @@ public class Main {
         JMenuItem menuItem4 = new JMenuItem("github: https://github.com/EhsanShahbazii");
         menuItem4.setMnemonic(KeyEvent.VK_F);
         menu2.add(menuItem4);
-        
+
         JMenu menu3 = new JMenu("App version");
         menu3.setMnemonic(KeyEvent.VK_F);
         menu3.getAccessibleContext().setAccessibleDescription("Dealing with Files");
+
+        JMenuItem menuItem6 = new JMenuItem("Built-in 2022 JAN, v1.0.1");
+        menuItem6.setMnemonic(KeyEvent.VK_F);
+        menu3.add(menuItem6);
+
+        
     }
 
     public static void main(String[] args) {
