@@ -17,6 +17,11 @@ public class Main {
 //        ImageIcon img = new ImageIcon("D:\\calculator plus\\src\\com\\company\\calculator_icon.png");
         jFrame.setIconImage(Toolkit.getDefaultToolkit().getImage(Main.class.getResource("calculator_icon.png")));
 //        jFrame.setIconImage(img.getImage());
+
+        JPanel jPanel = new JPanel();
+        jPanel.setLayout(null);
+        jPanel.setBounds(0, 0, 400, 600);
+        jPanel.setBackground(new Color(47, 48, 65));
     }
 
     public static void main(String[] args) {
