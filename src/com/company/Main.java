@@ -96,6 +96,17 @@ public class Main {
         menuBar.add(menu2);
         menuBar.add(menu3);
 
+        JButton button1 = setButton("Del", 12, 167);
+        JButton button2 = setButton("CE", 105, 167);
+        JButton button3 = setButton("%", 198, 167);
+        JButton button4 = setButton("/", 296, 167);
+        JButton button5 = setButton("7", 12, 242);
+        JButton button6 = setButton("8", 105, 242);
+        JButton button7 = setButton("9", 198, 242);
+        JButton button8 = setButton("*", 296, 242);
+        JButton button9 = setButton("4", 12, 317);
+        JButton button10 = setButton("5", 105, 317);
+
     }
 
     public static JButton setButton(String character,int x, int y) {
