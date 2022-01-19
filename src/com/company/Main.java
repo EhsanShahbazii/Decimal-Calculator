@@ -7,6 +7,8 @@ import java.awt.datatransfer.StringSelection;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
+import java.math.BigDecimal;
+import java.math.MathContext;
 
 public class Main {
 
@@ -125,6 +127,34 @@ public class Main {
         button8.setBackground(new Color(99, 189, 40, 255));
         button12.setBackground(new Color(99, 189, 40, 255));
         button16.setBackground(new Color(99, 189, 40, 255));
+
+        button1.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                //delete
+                String temp = jTextArea.getText();
+                if (temp.length() != 0) {
+                    jTextArea.setText(temp.substring(0, temp.length()-1));
+                }
+            }
+        });
+
+        button2.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                //ce clear
+                jTextArea.setText("");
+            }
+        });
+
+        button3.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String[] final3 = jTextArea.getText().split("%");
+                BigDecimal number3 = new BigDecimal(final3[0]);
+                jTextArea.setText(number3.divide(BigDecimal.valueOf(100) , MathContext.DECIMAL128).toString());
+            }
+        });
 
     }
 
