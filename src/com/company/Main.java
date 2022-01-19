@@ -51,6 +51,18 @@ public class Main {
         menu2.setMnemonic(KeyEvent.VK_F);
         menu2.getAccessibleContext().setAccessibleDescription("Dealing with Files");
 
+        JMenuItem menuItem2 = new JMenuItem("Creator: Ehsan Shahbazi");
+        menuItem2.setMnemonic(KeyEvent.VK_F);
+        menu2.add(menuItem2);
+
+        JMenuItem menuItem3 = new JMenuItem("Email: ehsan.shahbazipc@gmail.com");
+        menuItem3.setMnemonic(KeyEvent.VK_F);
+        menu2.add(menuItem3);
+
+        JMenuItem menuItem4 = new JMenuItem("github: https://github.com/EhsanShahbazii");
+        menuItem4.setMnemonic(KeyEvent.VK_F);
+        menu2.add(menuItem4);
+        
         JMenu menu3 = new JMenu("App version");
         menu3.setMnemonic(KeyEvent.VK_F);
         menu3.getAccessibleContext().setAccessibleDescription("Dealing with Files");
