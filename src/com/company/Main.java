@@ -117,6 +117,15 @@ public class Main {
         JButton button19 = setButton(".", 198, 467);
         JButton button20 = setButton("=", 296, 467);
 
+        button20.setBackground(new Color(0, 173, 239, 255));
+        button1.setBackground(new Color(215, 25, 32, 255));
+        button2.setBackground(new Color(215, 25, 32, 255));
+        button3.setBackground(new Color(99, 189, 40, 255));
+        button4.setBackground(new Color(99, 189, 40, 255));
+        button8.setBackground(new Color(99, 189, 40, 255));
+        button12.setBackground(new Color(99, 189, 40, 255));
+        button16.setBackground(new Color(99, 189, 40, 255));
+
     }
 
     public static JButton setButton(String character,int x, int y) {
