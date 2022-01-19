@@ -106,6 +106,16 @@ public class Main {
         JButton button8 = setButton("*", 296, 242);
         JButton button9 = setButton("4", 12, 317);
         JButton button10 = setButton("5", 105, 317);
+        JButton button11 = setButton("6", 198, 317);
+        JButton button12 = setButton("-", 296, 317);
+        JButton button13 = setButton("1", 12, 392);
+        JButton button14 = setButton("2", 105, 392);
+        JButton button15 = setButton("3", 198, 392);
+        JButton button16 = setButton("+", 296, 392);
+        JButton button17 = setButton("+/-", 12, 467);
+        JButton button18 = setButton("0", 105, 467);
+        JButton button19 = setButton(".", 198, 467);
+        JButton button20 = setButton("=", 296, 467);
 
     }
 
