@@ -182,6 +182,58 @@ public class Main {
             }
         });
 
+        button7.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                jTextArea.setText(jTextArea.getText() + "9");
+            }
+        });
+
+        button8.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                //multiply
+                String temp = jTextArea.getText();
+                if (temp.contains("*")) {
+                }else {
+                    jTextArea.setText(jTextArea.getText() + "*");
+                }
+            }
+        });
+
+        button9.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                jTextArea.setText(jTextArea.getText() + "4");
+            }
+        });
+
+        button10.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                jTextArea.setText(jTextArea.getText() + "5");
+            }
+        });
+
+        button11.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                jTextArea.setText(jTextArea.getText() + "6");
+            }
+        });
+
+        button12.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                //minus
+                String temp = jTextArea.getText();
+                if (temp.contains("-")) {
+                }else {
+                    jTextArea.setText(jTextArea.getText() + "-");
+                }
+            }
+        });
+
     }
 
     public static JButton setButton(String character,int x, int y) {
