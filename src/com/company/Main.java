@@ -95,10 +95,21 @@ public class Main {
         menuBar.add(menu1);
         menuBar.add(menu2);
         menuBar.add(menu3);
-        
+
+    }
+
+    public static JButton setButton(String character,int x, int y) {
+        JButton jButton = new JButton(character);
+        jButton.setBounds(x, y, 80, 60);
+        jButton.setForeground(new Color(232, 232, 232));
+        jButton.setBackground(new Color(73, 90, 97));
+        jButton.setFont(new Font("Arial", Font.PLAIN, 25));
+        jButton.setBorder(null);
+        jButton.setFocusPainted(false);
+        return jButton;
     }
 
     public static void main(String[] args) {
-	// write your code here
+        GUI();
     }
 }
