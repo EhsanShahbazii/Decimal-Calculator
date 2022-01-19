@@ -234,6 +234,39 @@ public class Main {
             }
         });
 
+        button13.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                jTextArea.setText(jTextArea.getText() + "1");
+            }
+        });
+
+        button14.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                jTextArea.setText(jTextArea.getText() + "2");
+            }
+        });
+
+        button15.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                jTextArea.setText(jTextArea.getText() + "3");
+            }
+        });
+
+        button16.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                //plus
+                String temp = jTextArea.getText();
+                if (temp.contains("+")) {
+                }else {
+                    jTextArea.setText(jTextArea.getText() + "+");
+                }
+            }
+        });
+
     }
 
     public static JButton setButton(String character,int x, int y) {
