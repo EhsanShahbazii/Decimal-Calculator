@@ -92,7 +92,10 @@ public class Main {
         menuItem6.setMnemonic(KeyEvent.VK_F);
         menu3.add(menuItem6);
 
-
+        menuBar.add(menu1);
+        menuBar.add(menu2);
+        menuBar.add(menu3);
+        
     }
 
     public static void main(String[] args) {
