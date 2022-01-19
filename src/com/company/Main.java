@@ -334,6 +334,17 @@ public class Main {
             }
         });
 
+        jPanel.add(button1);
+        jPanel.add(button2);
+        jPanel.add(button3);
+        jPanel.add(button4);
+        jPanel.add(button5);
+        jPanel.add(button6);
+        jPanel.add(button7);
+        jPanel.add(button8);
+        jPanel.add(button9);
+        jPanel.add(button10);
+
     }
 
     public static JButton setButton(String character,int x, int y) {
