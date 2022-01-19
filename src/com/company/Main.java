@@ -156,6 +156,32 @@ public class Main {
             }
         });
 
+        button4.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                //divide
+                String temp = jTextArea.getText();
+                if (temp.contains("/")) {
+                }else {
+                    jTextArea.setText(jTextArea.getText() + "/");
+                }
+            }
+        });
+
+        button5.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                jTextArea.setText(jTextArea.getText() + "7");
+            }
+        });
+
+        button6.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                jTextArea.setText(jTextArea.getText() + "8");
+            }
+        });
+
     }
 
     public static JButton setButton(String character,int x, int y) {
