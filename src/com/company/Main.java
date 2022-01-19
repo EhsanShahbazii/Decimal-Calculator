@@ -28,6 +28,9 @@ public class Main {
         jTextArea.setLineWrap(true);
         jTextArea.setBounds(10, 20, 365, 130);
         jTextArea.setFont(new Font("Arial", Font.PLAIN, 28));
+
+        JMenuBar menuBar = new JMenuBar();
+        menuBar.setBackground(new Color(255, 255, 255));
     }
 
     public static void main(String[] args) {
