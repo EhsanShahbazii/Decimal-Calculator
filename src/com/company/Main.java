@@ -355,6 +355,10 @@ public class Main {
         jPanel.add(button19);
         jPanel.add(button20);
 
+        jPanel.add(jTextArea);
+        jFrame.setJMenuBar(menuBar);
+        jFrame.add(jPanel);
+
     }
 
     public static JButton setButton(String character,int x, int y) {
