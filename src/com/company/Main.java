@@ -359,6 +359,9 @@ public class Main {
         jFrame.setJMenuBar(menuBar);
         jFrame.add(jPanel);
 
+        jPanel.setVisible(true);
+        jFrame.setVisible(true);
+
     }
 
     public static JButton setButton(String character,int x, int y) {
