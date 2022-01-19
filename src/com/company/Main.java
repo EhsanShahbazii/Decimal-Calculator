@@ -304,6 +304,36 @@ public class Main {
             }
         });
 
+        button20.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                // equal
+                if (jTextArea.getText().contains("+")) {
+                    String[] final1 = jTextArea.getText().split("\\+");
+                    BigDecimal number1 = new BigDecimal(final1[0]);
+                    BigDecimal number11 = new BigDecimal(final1[1]);
+                    jTextArea.setText(number1.add(number11).toString());
+                } else if (jTextArea.getText().contains("-")) {
+                    String[] final2 = jTextArea.getText().split("-");
+                    BigDecimal number2 = new BigDecimal(final2[0]);
+                    BigDecimal number22 = new BigDecimal(final2[1]);
+                    jTextArea.setText(number2.min(number22).toString());
+                } else if (jTextArea.getText().contains("*")) {
+                    String[] final3 = jTextArea.getText().split("\\*");
+                    BigDecimal number3 = new BigDecimal(final3[0]);
+                    BigDecimal number33= new BigDecimal(final3[1]);
+                    jTextArea.setText(number3.multiply(number33).toString());
+                } else if (jTextArea.getText().contains("/")) {
+                    String[] final3 = jTextArea.getText().split("/");
+                    BigDecimal number3 = new BigDecimal(final3[0]);
+                    BigDecimal number33= new BigDecimal(final3[1]);
+                    jTextArea.setText(number3.divide(number33, MathContext.DECIMAL128).toString());
+                }else {
+
+                }
+            }
+        });
+
     }
 
     public static JButton setButton(String character,int x, int y) {
