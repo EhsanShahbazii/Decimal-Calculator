@@ -22,6 +22,12 @@ public class Main {
         jPanel.setLayout(null);
         jPanel.setBounds(0, 0, 400, 600);
         jPanel.setBackground(new Color(47, 48, 65));
+
+        final JTextArea jTextArea = new JTextArea();
+        jTextArea.setEditable(false);
+        jTextArea.setLineWrap(true);
+        jTextArea.setBounds(10, 20, 365, 130);
+        jTextArea.setFont(new Font("Arial", Font.PLAIN, 28));
     }
 
     public static void main(String[] args) {
